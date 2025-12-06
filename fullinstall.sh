@@ -1,22 +1,21 @@
 #!/bin/bash
-
-sudo -v  # cache credentials once if needed
+sudo -v
 echo "$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER-temp > /dev/null
-trap 'sudo rm -f /etc/sudoers.d/$USER-temp 2>/dev/null' EXIT  # auto-clean when script ends
+trap 'sudo rm -f /etc/sudoers.d/$USER-temp 2>/dev/null' EXIT
 
-# Ask if they want to backup their .config
 read -p "Do you want to backup your current .config directory? (y/n, default: y): " backup_choice
-backup_choice=${backup_choice:-y}  # Default to 'y' if empty
+backup_choice=${backup_choice:-y}
 if [[ "$backup_choice" == "y" ]]; then
     cp -r ~/.config ~/.config_backup
     echo "Backup of .config created at ~/.config_backup"
 fi
 
+    #vscodium \
+
 yay -S --needed --noconfirm \
     brave-bin \
     companion \
     input-remapper \
-#    vscodium \
     wlogout \
     wttrbar \
     xone-dkms \
@@ -77,34 +76,30 @@ yay -S --needed --noconfirm \
     yad \
     zram-generator
 
-    systemctl enable bluetooth
-    systemctl --user enable pipewire.service
-    systemctl --user enable pipewire-pulse.service
-    systemctl --user start pipewire.service
-    systemctl --user start pipewire-pulse.service
+systemctl enable bluetooth
+systemctl --user enable pipewire.service
+systemctl --user enable pipewire-pulse.service
+systemctl --user start pipewire.service
+systemctl --user start pipewire-pulse.service
 
-    # Copy files
-    sudo cp -a ~/archlinux_hyprland/.config/* ~/.config/
-    sudo cp -a ~/archlinux_hyprland/.local/* ~/.local/
-    sudo cp -a ~/archlinux_hyprland/etc/* /etc/
-    sudo cp -a ~/archlinux_hyprland/usr/* /usr/
-    sudo cp -a ~/archlinux_hyprland/.bashrc ~/.bashrc
+# Copy files
+sudo cp -a $HOME/archlinux_hyprland/.config/* ~/.config/
+sudo cp -a $HOME/archlinux_hyprland/.local/* ~/.local/
+sudo cp -a $HOME/archlinux_hyprland/etc/* /etc/
+sudo cp -a $HOME/archlinux_hyprland/usr/* /usr/
+sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 
-# Ask if they want to use hyprexpo
 read -p "Do you want use hyprexpo? (y/n, default: y): " hyprexpo_choice
-hyprexpo_choice=${hyprexpo_choice:-y}  # Default to 'y' if empty
+hyprexpo_choice=${hyprexpo_choice:-y}
 if [[ "$hyprexpo_choice" == "y" ]]; then
-yay -S --needed meson cpio cmake
-hyprpm update
-hyprpm add https://github.com/hyprwm/hyprland-plugins
-hyprpm enable hyprexpo
+    yay -S --needed --noconfirm meson cpio cmake
+    hyprpm update
+    hyprpm add https://github.com/hyprwm/hyprland-plugins
+    hyprpm enable hyprexpo
 else
-    # Disable the keybind when hyprexpo is not installed
     sed -i '/bind = SUPER, TAB, hyprexpo:expo, toggle/s/^/#/' ~/.config/hypr/modules/binds.conf
 fi
 
-# Wallpaper select
 echo "Opening wallpaper selector..."
 python3 ~/.config/matugen/scripts/wallpaper-select.py
-
 notify-send "Good job $USER, You did it! Open Terminal with MOD+T."
