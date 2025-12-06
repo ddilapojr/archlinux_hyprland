@@ -1,7 +1,4 @@
 #!/bin/bash
-# Ask if they want automatic or manual installation
-read -p "Do you want automatic (default) or manual installation? (a/m): " install_choice
-install_choice=${install_choice:-a}  # Default to 'a' if empty
 # Ask if they want to backup their .config
 read -p "Do you want to backup your current .config directory? (y/n, default: y): " backup_choice
 backup_choice=${backup_choice:-y}  # Default to 'y' if empty
@@ -9,8 +6,8 @@ if [[ "$backup_choice" == "y" ]]; then
     cp -r ~/.config ~/.config_backup
     echo "Backup of .config created at ~/.config_backup"
 fi
-yay -Syu --noconfirm
-yay -S --noconfirm --needed --removemake brave-bin companion input-remapper vscodium-bin wlogout wttrbar xone-dkms xone-dongle-firmware base-devel blueman bluez bluez-utils btrfs-assistant btrfs-progs discord file-roller font-manager ghostty grub-btrfs gtk3 gtk4 helvum htop hypridle hyprland hyprlock hyprpolkitagent hyprshot kvantum kvantum-qt5 libpulse matugen nemo nvidia-open-dkms nwg-look openrgb pavucontrol qt5-wayland qt5ct qt6-multimedia-ffmpeg qt6-virtualkeyboard qt6-wayland qt6ct rofi samba sddm sddm-kcm smartmontools snapper starship steam swaync swww ttf-jetbrains-mono-nerd unzip vim vlc vlc-plugin-ffmpeg waybar yad zram-generator
+
+yay -S brave-bin companion input-remapper vscodium-bin wlogout wttrbar xone-dkms xone-dongle-firmware blueman bluez bluez-utils btrfs-assistant btrfs-progs discord file-roller font-manager ghostty grub-btrfs gtk3 gtk4 helvum htop hypridle hyprland hyprlock hyprpolkitagent hyprshot kvantum kvantum-qt5 libpulse matugen nemo nwg-look openrgb pavucontrol qt5-wayland qt5ct qt6-multimedia-ffmpeg qt6-virtualkeyboard qt6-wayland qt6ct rofi samba sddm sddm-kcm smartmontools snapper starship steam swaync swww ttf-jetbrains-mono-nerd unzip vim vlc vlc-plugin-ffmpeg waybar yad zram-generator
 
     systemctl enable bluetooth
     systemctl --user enable pipewire.service
