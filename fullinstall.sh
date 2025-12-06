@@ -14,11 +14,11 @@ fi
 
 yay -S brave-bin companion input-remapper vscodium-bin wlogout wttrbar xone-dkms xone-dongle-firmware blueman bluez bluez-utils btrfs-assistant btrfs-progs discord file-roller font-manager ghostty grub-btrfs gtk3 gtk4 helvum htop hypridle hyprland hyprlock hyprpolkitagent hyprshot kvantum kvantum-qt5 libpulse matugen nemo nwg-look openrgb pavucontrol qt5-wayland qt5ct qt6-multimedia-ffmpeg qt6-virtualkeyboard qt6-wayland qt6ct rofi samba sddm sddm-kcm smartmontools snapper starship steam swaync swww ttf-jetbrains-mono-nerd unzip vim vlc vlc-plugin-ffmpeg waybar yad zram-generator
 
-    systemctl enable bluetooth
-    systemctl --user enable pipewire.service
-    systemctl --user enable pipewire-pulse.service
-    systemctl --user start pipewire.service
-    systemctl --user start pipewire-pulse.service
+#    systemctl enable bluetooth
+#    systemctl --user enable pipewire.service
+#    systemctl --user enable pipewire-pulse.service
+#    systemctl --user start pipewire.service
+#    systemctl --user start pipewire-pulse.service
     # Copy files
     sudo cp -a ~/archlinux_hyprland/.config/* ~/.config/
     sudo cp -a ~/archlinux_hyprland/.local/* ~/.local/
