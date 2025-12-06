@@ -1,4 +1,9 @@
 #!/bin/bash
+
+sudo -v  # cache credentials once if needed
+echo "$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER-temp > /dev/null
+trap 'sudo rm -f /etc/sudoers.d/$USER-temp 2>/dev/null' EXIT  # auto-clean when script ends
+
 # Ask if they want to backup their .config
 read -p "Do you want to backup your current .config directory? (y/n, default: y): " backup_choice
 backup_choice=${backup_choice:-y}  # Default to 'y' if empty
