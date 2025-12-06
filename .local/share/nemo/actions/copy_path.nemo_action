@@ -1,0 +1,8 @@
+[Nemo Action]
+Active=true
+Name=Copy File Path
+Comment=Copy full path to clipboard
+Exec=/usr/bin/bash -c 'wl-copy "%F"'
+Selection=s
+Extensions=any;
+Quote=double

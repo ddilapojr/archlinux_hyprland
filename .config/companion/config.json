@@ -1,0 +1,13 @@
+{
+	"http_port": 8000,
+	"bind_ip": "127.0.0.1",
+	"start_minimised": true,
+	"enable_developer": false,
+	"dev_modules_path": "",
+	"log_level": "info",
+	"enable_syslog": false,
+	"syslog_host": "127.0.0.1",
+	"syslog_port": 514,
+	"syslog_use_tcp": false,
+	"syslog_local_hostname": ""
+}

@@ -1,0 +1,51 @@
+{
+    "keepSettings": {
+        "type": 1,
+        "amount": 7
+    },
+    "auditFilename": "/home/tactical_crackpipe/.config/companion/logs/audit.json",
+    "hashType": "md5",
+    "extension": ".log",
+    "files": [
+        {
+            "date": 1763860240491,
+            "name": "/home/tactical_crackpipe/.config/companion/logs/companion-2025-11-22.0.log",
+            "hash": "6db18000e47c2d292f71970b389a5791"
+        },
+        {
+            "date": 1763923296353,
+            "name": "/home/tactical_crackpipe/.config/companion/logs/companion-2025-11-23.0.log",
+            "hash": "8b46edaf8eacd351d3bc3cb6f202f7ed"
+        },
+        {
+            "date": 1764028513597,
+            "name": "/home/tactical_crackpipe/.config/companion/logs/companion-2025-11-24.0.log",
+            "hash": "bb6904e03ad76b981e33959bffa9de45"
+        },
+        {
+            "date": 1764095956282,
+            "name": "/home/tactical_crackpipe/.config/companion/logs/companion-2025-11-25.0.log",
+            "hash": "95379290408cc376a494352b86c218fb"
+        },
+        {
+            "date": 1764201701928,
+            "name": "/home/tactical_crackpipe/.config/companion/logs/companion-2025-11-26.0.log",
+            "hash": "12f36206863ac7382dea6751e3e91f3c"
+        },
+        {
+            "date": 1764219729592,
+            "name": "/home/tactical_crackpipe/.config/companion/logs/companion-2025-11-27.0.log",
+            "hash": "dea405b73d22d3a409945eb2ff402fb0"
+        },
+        {
+            "date": 1764306505958,
+            "name": "/home/tactical_crackpipe/.config/companion/logs/companion-2025-11-28.0.log",
+            "hash": "f7569bee48b64e48194df14e7bf3c355"
+        },
+        {
+            "date": 1764421937221,
+            "name": "/home/tactical_crackpipe/.config/companion/logs/companion-2025-11-29.0.log",
+            "hash": "e8fa0b5c8fb9191ee91b59f7d396ed9c"
+        }
+    ]
+}

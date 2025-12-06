@@ -1,0 +1,60 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20251123_150321
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: Gatorade.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for Gatorade
+0     |Info:    [ProfileManager] Found file: Clown Shoes.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v4 profile found for Clown Shoes
+55    |Info:    [ResourceManager] Initializing HID interfaces: Success
+55    |Info:    ------------------------------------------------------
+55    |Info:    |               Start device detection               |
+55    |Info:    ------------------------------------------------------
+85    |Info:    ------------------------------------------------------
+85    |Info:    |             Detecting I2C interfaces               |
+85    |Info:    ------------------------------------------------------
+86    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:2486 Subsystem: 10DE:147A
+86    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1022:790B Subsystem: 1462:7D53
+86    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:2486 Subsystem: 10DE:147A
+86    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:2486 Subsystem: 10DE:147A
+86    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 1022:790B Subsystem: 1462:7D53
+86    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 1022:790B Subsystem: 1462:7D53
+86    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:2486 Subsystem: 10DE:147A
+86    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:2486 Subsystem: 10DE:147A
+86    |Info:    ------------------------------------------------------
+86    |Info:    |               Detecting I2C devices                |
+86    |Info:    ------------------------------------------------------
+368   |Info:    [ENE DRAM] Registering RGB controller
+548   |Info:    [ENE DRAM] Registering RGB controller
+1387  |Info:    ------------------------------------------------------
+1387  |Info:    |            Detecting I2C DIMM modules              |
+1387  |Info:    ------------------------------------------------------
+2255  |Info:    [ResourceManager] Detected occupied slot 3, bus 5, type DDR4
+3539  |Info:    [ResourceManager] Detected occupied slot 4, bus 5, type DDR4
+4569  |Info:    ------------------------------------------------------
+4569  |Info:    |               Detecting I2C PCI devices            |
+4569  |Info:    ------------------------------------------------------
+4570  |Info:    ------------------------------------------------------
+4570  |Info:    |               Detecting HID devices                |
+4570  |Info:    ------------------------------------------------------
+4622  |Info:    [Logitech G915 Wireless RGB Mechanical Gaming Keyboard] Registering RGB controller
+4690  |Info:    [MSI MPG X570S EDGE MAX WIFI (MS-7D53)] Registering RGB controller
+4690  |Info:    ------------------------------------------------------
+4690  |Info:    |            Detecting libusb HID devices            |
+4690  |Info:    ------------------------------------------------------
+4762  |Info:    ------------------------------------------------------
+4762  |Info:    |              Detecting other devices               |
+4762  |Info:    ------------------------------------------------------
+4807  |Info:    [ResourceManager] Calling Post-detection callbacks
+4807  |Info:    ------------------------------------------------------
+4807  |Info:    |                Detection completed                 |
+4807  |Info:    ------------------------------------------------------
+4807  |Info:    [ProfileManager] Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-0, address 0x72
+4807  |Info:    [ProfileManager] Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-0, address 0x73
+4807  |Info:    [ProfileManager] Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+4807  |Info:    [ProfileManager] Profile loading: Succeeded for MSI MPG X570S EDGE MAX WIFI (MS-7D53) @ HID: /dev/hidraw0
+1621329|Info:    [ProfileManager] Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-0, address 0x72
+1621338|Info:    [ProfileManager] Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-0, address 0x73
+1621338|Info:    [ProfileManager] Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+1621338|Info:    [ProfileManager] Profile loading: Succeeded for MSI MPG X570S EDGE MAX WIFI (MS-7D53) @ HID: /dev/hidraw0

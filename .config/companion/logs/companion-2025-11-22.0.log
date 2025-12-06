@@ -1,0 +1,229 @@
+2025-11-23T01:10:40.603Z Application: Companion process started
+2025-11-23T01:10:41.443Z info Main Application starting
+2025-11-23T01:10:41.444Z info Registry Build 4.1.4+8492-makepkg-4cb4314544
+2025-11-23T01:10:41.444Z info Registry configuration directory: /home/tactical_crackpipe/.config/companion/v4.1
+2025-11-23T01:10:41.461Z info Log/Controller Sentry error reporting is disabled
+2025-11-23T01:10:41.504Z info Data/Upgrade Upgrading db from version 6 to 9
+2025-11-23T01:10:41.547Z info Graphics/Controller Render worker created
+2025-11-23T01:10:41.549Z info Graphics/Controller Render worker created
+2025-11-23T01:10:41.550Z info Graphics/Controller Loading fonts
+2025-11-23T01:10:41.567Z info Graphics/Controller Fonts loaded
+2025-11-23T01:10:41.586Z info Service/BonjourDiscovery Listening for Bonjour messages
+/bin/sh: line 1: hostname: command not found
+2025-11-23T01:10:41.647Z warn Instance/ModuleStoreService Refreshing store module list failed: fetch failed
+2025-11-23T01:10:41.686Z info Data/UserConfig set 'https_self_cn' to: "127.0.0.1"
+Started
+2025-11-23T01:10:41.687Z info UI/Server new url: http://127.0.0.1:8000/
+2025-11-23T01:11:10.612Z Application: Companion looks to be stable
+2025-11-23T01:13:32.473Z info ImportExport/Controller Starting upload of file archlinux_2025-11-08-2208.companionconfig (1157257 bytes)
+2025-11-23T01:13:32.564Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@0 = 65536 bytes)
+2025-11-23T01:13:32.571Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@65536 = 65536 bytes)
+2025-11-23T01:13:32.585Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@131072 = 65536 bytes)
+2025-11-23T01:13:32.591Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@196608 = 65536 bytes)
+2025-11-23T01:13:32.685Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@262144 = 65536 bytes)
+2025-11-23T01:13:32.695Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@327680 = 196608 bytes)
+2025-11-23T01:13:32.706Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@524288 = 65536 bytes)
+2025-11-23T01:13:32.721Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@589824 = 196608 bytes)
+2025-11-23T01:13:32.737Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@786432 = 262144 bytes)
+2025-11-23T01:13:32.751Z info ImportExport/Controller Uploading chunk gYYz5dgzOoBnCGlLQ8u8Z (@1048576 = 108681 bytes)
+2025-11-23T01:13:32.755Z info ImportExport/Controller Completing upload session gYYz5dgzOoBnCGlLQ8u8Z
+2025-11-23T01:13:46.779Z info Data/UserConfig set 'gridSize' to: {"minColumn":0,"maxColumn":4,"minRow":0,"maxRow":3}
+2025-11-23T01:13:59.912Z info Data/UserConfig set 'gridSize' to: {"minColumn":0,"maxColumn":4,"minRow":0,"maxRow":2}
+2025-11-23T01:14:02.847Z info Data/UserConfig set 'remove_topbar' to: true
+2025-11-23T01:14:11.827Z info ImportExport/Controller Starting upload of file archlinux_2025-11-08-2208.companionconfig (1157257 bytes)
+2025-11-23T01:14:11.860Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@0 = 65536 bytes)
+2025-11-23T01:14:11.868Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@65536 = 65536 bytes)
+2025-11-23T01:14:11.878Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@131072 = 131072 bytes)
+2025-11-23T01:14:11.897Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@262144 = 65536 bytes)
+2025-11-23T01:14:11.902Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@327680 = 65536 bytes)
+2025-11-23T01:14:11.909Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@393216 = 65536 bytes)
+2025-11-23T01:14:11.913Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@458752 = 65536 bytes)
+2025-11-23T01:14:11.947Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@524288 = 65536 bytes)
+2025-11-23T01:14:11.957Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@589824 = 196608 bytes)
+2025-11-23T01:14:11.970Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@786432 = 131072 bytes)
+2025-11-23T01:14:11.978Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@917504 = 131072 bytes)
+2025-11-23T01:14:11.986Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@1048576 = 65536 bytes)
+2025-11-23T01:14:11.989Z info ImportExport/Controller Uploading chunk gklo82Sdf7hXR0uxomVta (@1114112 = 43145 bytes)
+2025-11-23T01:14:11.992Z info ImportExport/Controller Completing upload session gklo82Sdf7hXR0uxomVta
+Performing full import: Full Reset Config: {"buttons":true,"surfaces":true,"triggers":true,"customVariables":true,"expressionVariables":true}
+2025-11-23T01:14:14.303Z info Data/UserConfig set 'gridSize' to: {"minColumn":0,"maxColumn":7,"minRow":0,"maxRow":3}
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'setup_wizard' to: 0 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'page_direction_flipped' to: false
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'page_plusminus' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'remove_topbar' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'xkeys_enable' to: true
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'elgato_plugin_enable' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'usb_hotplug' to: true 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'loupedeck_enable' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'mirabox_streamdock_enable' to: true 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'contour_shuttle_enable' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'vec_footpedal_enable' to: false
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'blackmagic_controller_enable' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'mystrix_enable' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'logitech_mx_console_enable' to: false
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'pin_enable' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'link_lockouts' to: false 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'pin' to: "" 
+2025-11-23T01:14:14.807Z info Data/UserConfig set 'pin_timeout' to: 0 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'http_api_enabled' to: true 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'http_legacy_api_enabled' to: false 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'tcp_enabled' to: false
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'tcp_listen_port' to: 16759 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'tcp_legacy_api_enabled' to: false 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'udp_enabled' to: false
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'udp_listen_port' to: 16759 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'udp_legacy_api_enabled' to: false 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'osc_enabled' to: false 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'osc_listen_port' to: 12321 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'osc_legacy_api_enabled' to: false 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'rosstalk_enabled' to: false
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'emberplus_enabled' to: false 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'videohub_panel_enabled' to: false 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'artnet_enabled' to: false
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'artnet_universe' to: 1 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'artnet_channel' to: 1 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_enabled' to: false
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_port' to: 8443 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_cert_type' to: "self" 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_self_cn' to: "127.0.0.1"
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_self_expiry' to: 365 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_self_cert' to: "" 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_self_cert_created' to: ""
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_self_cert_cn' to: "" 
+2025-11-23T01:14:14.808Z info Data/UserConfig set 'https_self_cert_expiry' to: ""
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'https_self_cert_private' to: "" 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'https_self_cert_public' to: "" 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'https_ext_private_key' to: "" 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'https_ext_certificate' to: ""
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'https_ext_chain' to: "" 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'admin_lockout' to: false 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'admin_timeout' to: 5
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'admin_password' to: "" 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'gridSize' to: {"minColumn":0,"maxColumn":7,"minRow":0,"maxRow":3}
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'gridSizeInlineGrow' to: false 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'gridSizePromptGrow' to: true
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'installName' to: "" 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'default_export_filename' to: "$(internal:hostname)_$(internal:date_iso)-$(internal:time_h)$(internal:time_m)"
+2025-11-23T01:14:14.809Z warn Data/UserConfig Direct updates to 'backups' configuration are not allowed. Use backup-rules endpoints instead. 
+2025-11-23T01:14:14.809Z info Data/UserConfig set 'discoveryEnabled' to: true
+2025-11-23T01:14:14.810Z info Instance/UserModulesManager Queuing install of module "homeassistant-server" v1.2.0
+2025-11-23T01:14:14.814Z info Instance/Controller Adding connection homeassistant-server undefined
+2025-11-23T01:14:14.815Z info Instance/Controller Enable instance homeassistant-server
+2025-11-23T01:14:14.816Z info Instance/ModuleHost Starting connection: "homeassistant-server" (M5U_75CUOdBnRX0Y9nLCp)
+2025-11-23T01:14:14.817Z info Instance/UserModulesManager Queuing install of module "discord-api" v1.4.0
+2025-11-23T01:14:14.818Z info Instance/Controller Adding connection discord-api undefined
+2025-11-23T01:14:14.818Z info Instance/Controller Enable instance discord
+2025-11-23T01:14:14.818Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:14:14.917Z error Instance/ModuleHost Configured instance "homeassistant-server" could not be loaded, unknown module
+2025-11-23T01:14:14.918Z error Instance/ModuleHost Configured instance "discord-api" could not be loaded, unknown module
+2025-11-23T01:14:14.968Z info Graphics/Controller Render worker created
+2025-11-23T01:14:14.970Z info Graphics/Controller Render worker created
+2025-11-23T01:14:14.970Z info Graphics/Controller Render worker created
+2025-11-23T01:14:14.971Z info Graphics/Controller Render worker created
+2025-11-23T01:14:15.549Z info Instance/UserModulesManager Downloaded discord-api v1.4.0 in 253ms (75521 bytes)
+2025-11-23T01:14:15.559Z info Instance/UserModulesManager Installed module discord-api v1.4.0
+2025-11-23T01:14:15.559Z info Instance/Modules New module installed: discord-api
+2025-11-23T01:14:15.561Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:14:15.562Z info Instance/Controller Reloading 1 connections: discord
+2025-11-23T01:14:15.572Z info Instance/discord Connection started process 5081
+2025-11-23T01:14:15.784Z warn Instance/Wrapper/discord discord client disconnected
+2025-11-23T01:14:15.956Z info Instance/UserModulesManager Downloaded homeassistant-server v1.2.0 in 704ms (252406 bytes)
+2025-11-23T01:14:15.974Z info Instance/UserModulesManager Installed module homeassistant-server v1.2.0 
+2025-11-23T01:14:15.974Z info Instance/Modules New module installed: homeassistant-server
+2025-11-23T01:14:15.974Z info Instance/ModuleHost Starting connection: "homeassistant-server" (M5U_75CUOdBnRX0Y9nLCp)
+2025-11-23T01:14:15.975Z info Instance/Controller Reloading 1 connections: homeassistant-server
+2025-11-23T01:14:15.986Z info Instance/homeassistant-server Connection started process 5097
+2025-11-23T01:14:16.051Z info Instance/Wrapper/homeassistant-server Connected to v2025.11.2
+2025-11-23T01:14:16.147Z warn Instance/Wrapper/homeassistant-server Got variable definitions with invalid ids: ["entity.binary_sensor.pi_hole_status_2.attributes.URL instance","entity.binary_sensor.pi_hole_status_2.attributes.Core version","entity.binary_sensor.pi_hole_status_2.attributes.Docker version","entity.binary_sensor.pi_hole_status_2.attributes.FTL version","entity.binary_sensor.pi_hole_status_2.attributes.Web interface version","entity.binary_sensor.portable_plumbus_active.attributes.Fast User Switched","entity.binary_sensor.portable_plumbus_active.attributes.Screen Off","entity.sensor.cellular_plumbus_battery_state.attributes.Low Power Mode","entity.sensor.cellular_plumbus_geocoded_location.attributes.Administrative Area","entity.sensor.cellular_plumbus_geocoded_location.attributes.Areas Of Interest","entity.sensor.cellular_plumbus_geocoded_location.attributes.Inland Water","entity.sensor.cellular_plumbus_geocoded_location.attributes.ISO Country Code","entity.sensor.cellular_plumbus_geocoded_location.attributes.Postal Code","entity.sensor.cellular_plumbus_geocoded_location.attributes.Sub Administrative Area","entity.sensor.cellular_plumbus_geocoded_location.attributes.Sub Locality","entity.sensor.cellular_plumbus_geocoded_location.attributes.Sub Thoroughfare","entity.sensor.cellular_plumbus_geocoded_location.attributes.Time Zone","entity.sensor.cellular_plumbus_sim_1.attributes.Allows VoIP","entity.sensor.cellular_plumbus_sim_1.attributes.Carrier ID","entity.sensor.cellular_plumbus_sim_1.attributes.Carrier Name","entity.sensor.cellular_plumbus_sim_1.attributes.Current Radio Technology","entity.sensor.cellular_plumbus_sim_1.attributes.ISO Country Code","entity.sensor.cellular_plumbus_sim_1.attributes.Mobile Country Code","entity.sensor.cellular_plumbus_sim_1.attributes.Mobile Network Code","entity.sensor.cellular_plumbus_sim_2.attributes.Allows VoIP","entity.sensor.cellular_plumbus_sim_2.attributes.Carrier ID","entity.sensor.cellular_plumbus_sim_2.attributes.Carrier Name","entity.sensor.cellular_plumbus_sim_2.attributes.ISO Country Code","entity.sensor.cellular_plumbus_sim_2.attributes.Mobile Country Code","entity.sensor.cellular_plumbus_sim_2.attributes.Mobile Network Code","entity.sensor.cellular_plumbus_storage.attributes.Available (Important)","entity.sensor.cellular_plumbus_storage.attributes.Available (Opportunistic)","entity.sensor.portable_plumbus_active_audio_input.attributes.Active Audio Input","entity.sensor.portable_plumbus_active_audio_input.attributes.All Audio Input","entity.sensor.portable_plumbus_active_audio_output.attributes.Active Audio Output","entity.sensor.portable_plumbus_active_audio_output.attributes.All Audio Output","entity.sensor.portable_plumbus_active_camera.attributes.Active Camera","entity.sensor.portable_plumbus_active_camera.attributes.All Camera","entity.sensor.portable_plumbus_connection_type.attributes.Hardware Address","entity.sensor.portable_plumbus_displays.attributes.Display IDs","entity.sensor.portable_plumbus_displays.attributes.Display Names","entity.sensor.portable_plumbus_frontmost_app.attributes.Bundle Identifier","entity.sensor.portable_plumbus_frontmost_app.attributes.Is Hidden","entity.sensor.portable_plumbus_frontmost_app.attributes.Launch Date","entity.sensor.portable_plumbus_frontmost_app.attributes.Owns Menu Bar","entity.sensor.portable_plumbus_geocoded_location.attributes.Administrative Area","entity.sensor.portable_plumbus_geocoded_location.attributes.Areas Of Interest","entity.sensor.portable_plumbus_geocoded_location.attributes.Inland Water","entity.sensor.portable_plumbus_geocoded_location.attributes.ISO Country Code","entity.sensor.portable_plumbus_geocoded_location.attributes.Postal Code","entity.sensor.portable_plumbus_geocoded_location.attributes.Sub Administrative Area","entity.sensor.portable_plumbus_geocoded_location.attributes.Sub Locality","entity.sensor.portable_plumbus_geocoded_location.attributes.Sub Thoroughfare","entity.sensor.portable_plumbus_geocoded_location.attributes.Time Zone","entity.sensor.portable_plumbus_internal_battery_level.attributes.Battery Provides Time Remaining","entity.sensor.portable_plumbus_internal_battery_level.attributes.Current Capacity","entity.sensor.portable_plumbus_internal_battery_level.attributes.Hardware Serial Number","entity.sensor.portable_plumbus_internal_battery_level.attributes.Is Charging","entity.sensor.portable_plumbus_internal_battery_level.attributes.Is Finishing Charge","entity.sensor.portable_plumbus_internal_battery_level.attributes.Is Present","entity.sensor.portable_plumbus_internal_battery_level.attributes.LPM Active","entity.sensor.portable_plumbus_internal_battery_level.attributes.Max Capacity","entity.sensor.portable_plumbus_internal_battery_level.attributes.Power Source ID","entity.sensor.portable_plumbus_internal_battery_level.attributes.Power Source State","entity.sensor.portable_plumbus_internal_battery_level.attributes.Time to Empty","entity.sensor.portable_plumbus_internal_battery_level.attributes.Time to Full Charge","entity.sensor.portable_plumbus_internal_battery_level.attributes.Transport Type","entity.sensor.portable_plumbus_internal_battery_state.attributes.Battery Provides Time Remaining","entity.sensor.portable_plumbus_internal_battery_state.attributes.Current Capacity","entity.sensor.portable_plumbus_internal_battery_state.attributes.Hardware Serial Number","entity.sensor.portable_plumbus_internal_battery_state.attributes.Is Charging","entity.sensor.portable_plumbus_internal_battery_state.attributes.Is Finishing Charge","entity.sensor.portable_plumbus_internal_battery_state.attributes.Is Present","entity.sensor.portable_plumbus_internal_battery_state.attributes.Low Power Mode","entity.sensor.portable_plumbus_internal_battery_state.attributes.LPM Active","entity.sensor.portable_plumbus_internal_battery_state.attributes.Max Capacity","entity.sensor.portable_plumbus_internal_battery_state.attributes.Power Source ID","entity.sensor.portable_plumbus_internal_battery_state.attributes.Power Source State","entity.sensor.portable_plumbus_internal_battery_state.attributes.Time to Empty","entity.sensor.portable_plumbus_internal_battery_state.attributes.Time to Full Charge","entity.sensor.portable_plumbus_internal_battery_state.attributes.Transport Type","entity.sensor.portable_plumbus_storage.attributes.Available (Important)","entity.sensor.portable_plumbus_storage.attributes.Available (Opportunistic)","entity.sensor.ultra_portable_plumbus_battery_state.attributes.Low Power Mode","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Administrative Area","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Areas Of Interest","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Inland Water","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.ISO Country Code","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Postal Code","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Sub Administrative Area","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Sub Locality","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Sub Thoroughfare","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Time Zone","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Allows VoIP","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Carrier ID","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Carrier Name","entity.sensor.ultra_portable_plumbus_sim_1.attributes.ISO Country Code","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Mobile Country Code","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Mobile Network Code","entity.sensor.ultra_portable_plumbus_storage.attributes.Available (Important)","entity.sensor.ultra_portable_plumbus_storage.attributes.Available (Opportunistic)","entity.sensor.work_phone_battery_state.attributes.Low Power Mode"]
+2025-11-23T01:14:30.478Z info Data/UserConfig set 'gridSize' to: {"minColumn":0,"maxColumn":4,"minRow":0,"maxRow":2}
+2025-11-23T01:14:31.989Z info Data/UserConfig set 'remove_topbar' to: true
+2025-11-23T01:14:35.583Z info Instance/Controller Disable instance discord
+2025-11-23T01:14:36.136Z info Instance/Controller Enable instance discord
+2025-11-23T01:14:36.137Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:14:36.151Z info Instance/discord Connection started process 5111
+2025-11-23T01:14:36.314Z warn Instance/Wrapper/discord discord client disconnected
+2025-11-23T01:15:45.140Z info Instance/Controller Disable instance discord
+2025-11-23T01:15:45.665Z info Instance/Controller Enable instance discord
+2025-11-23T01:15:45.665Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:15:45.679Z info Instance/discord Connection started process 5249
+2025-11-23T01:15:45.826Z warn Instance/Wrapper/discord discord client disconnected
+2025-11-23T01:15:48.505Z info Instance/Controller Disable instance discord
+2025-11-23T01:15:48.505Z info Instance/Controller Enable instance discord
+2025-11-23T01:15:48.544Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:15:48.558Z info Instance/discord Connection started process 5270
+2025-11-23T01:15:48.715Z warn Instance/Wrapper/discord discord client disconnected
+2025-11-23T01:15:49.763Z info Instance/Controller Disable instance discord
+2025-11-23T01:15:49.764Z info Instance/Controller Enable instance discord
+2025-11-23T01:15:49.802Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:15:49.816Z info Instance/discord Connection started process 5282
+2025-11-23T01:15:49.983Z info Instance/Controller Disable instance discord
+2025-11-23T01:15:49.984Z info Instance/Controller Enable instance discord
+2025-11-23T01:15:50.021Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:15:50.034Z info Instance/discord Connection started process 5295
+2025-11-23T01:16:13.092Z info Instance/Controller Disable instance discord
+2025-11-23T01:16:14.021Z info Instance/Controller Enable instance discord
+2025-11-23T01:16:14.022Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:16:14.037Z info Instance/discord Connection started process 5337
+2025-11-23T01:16:19.003Z info Instance/Controller Disable instance discord
+2025-11-23T01:16:19.003Z info Instance/Controller Enable instance discord
+2025-11-23T01:16:19.041Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:16:19.056Z info Instance/discord Connection started process 5354
+2025-11-23T01:16:19.273Z info Instance/Controller Disable instance discord
+2025-11-23T01:16:19.273Z info Instance/Controller Enable instance discord
+2025-11-23T01:16:19.311Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:16:19.326Z info Instance/discord Connection started process 5366
+2025-11-23T01:16:28.802Z info Instance/Controller Disable instance discord
+2025-11-23T01:16:28.803Z info Instance/Controller Enable instance discord
+2025-11-23T01:16:28.843Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:16:28.858Z info Instance/discord Connection started process 5385
+2025-11-23T01:16:30.732Z info Instance/Controller Disable instance discord
+2025-11-23T01:16:30.733Z info Instance/Controller Enable instance discord
+2025-11-23T01:16:30.772Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:16:30.788Z info Instance/discord Connection started process 5397
+2025-11-23T01:16:32.072Z info Instance/Controller Disable instance discord
+2025-11-23T01:16:32.073Z info Instance/Controller Enable instance discord
+2025-11-23T01:16:32.110Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:16:32.126Z info Instance/discord Connection started process 5409
+2025-11-23T01:16:38.755Z warn Instance/Wrapper/discord discord client disconnected
+Aborted an action OgrHbhmt23zdAp1w_JxaB
+2025-11-23T01:16:52.859Z info Registry somewhere, the system wants to exit. kthxbai
+2025-11-23T01:16:52.922Z error Surface/Handler/streamdeck:DL15L2A02957 Elgato Stream Deck MK.2 disconnected
+2025-11-23T01:16:52.923Z warn surfaces Error getting: The database connection is not open
+2025-11-23T01:16:53.069Z Application: Companion exited with code: 0
+2025-11-23T01:16:53.069Z Application: Companion process stopped
+2025-11-23T01:17:55.258Z Application: Companion process started
+2025-11-23T01:17:55.812Z info Main Application starting 
+2025-11-23T01:17:55.814Z info Registry Build 4.1.4+8492-makepkg-4cb4314544 
+2025-11-23T01:17:55.815Z info Registry configuration directory: /home/tactical_crackpipe/.config/companion/v4.1 
+2025-11-23T01:17:55.835Z info Log/Controller Sentry error reporting is disabled 
+2025-11-23T01:17:55.838Z info Data/Upgrade Upgrading db from version 8 to 9 
+2025-11-23T01:17:55.896Z info Graphics/Controller Render worker created 
+2025-11-23T01:17:55.898Z info Graphics/Controller Render worker created 
+2025-11-23T01:17:55.899Z info Graphics/Controller Loading fonts 
+2025-11-23T01:17:55.900Z info Graphics/Controller Fonts loaded 
+2025-11-23T01:17:55.920Z info Service/BonjourDiscovery Listening for Bonjour messages
+2025-11-23T01:17:55.981Z info Graphics/Controller Render worker created
+2025-11-23T01:17:55.982Z info Graphics/Controller Render worker created
+2025-11-23T01:17:55.983Z info Graphics/Controller Render worker created
+2025-11-23T01:17:55.984Z info Graphics/Controller Render worker created
+2025-11-23T01:17:56.005Z info Instance/Modules discord-api@1.4.0: Discord: API
+2025-11-23T01:17:56.005Z info Instance/Modules homeassistant-server@1.2.0: Home Assistant: Server
+2025-11-23T01:17:56.007Z info Instance/ModuleHost Starting connection: "homeassistant-server" (M5U_75CUOdBnRX0Y9nLCp)
+2025-11-23T01:17:56.008Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+Started
+2025-11-23T01:17:56.045Z info UI/Server new url: http://127.0.0.1:8000/
+2025-11-23T01:17:56.055Z info Instance/homeassistant-server Connection started process 6316
+2025-11-23T01:17:56.061Z info Instance/discord Connection started process 6319
+2025-11-23T01:17:56.130Z info Instance/Wrapper/homeassistant-server Connected to v2025.11.2
+2025-11-23T01:17:56.214Z warn Instance/Wrapper/homeassistant-server Got variable definitions with invalid ids: ["entity.binary_sensor.pi_hole_status_2.attributes.URL instance","entity.binary_sensor.pi_hole_status_2.attributes.Core version","entity.binary_sensor.pi_hole_status_2.attributes.Docker version","entity.binary_sensor.pi_hole_status_2.attributes.FTL version","entity.binary_sensor.pi_hole_status_2.attributes.Web interface version","entity.binary_sensor.portable_plumbus_active.attributes.Fast User Switched","entity.binary_sensor.portable_plumbus_active.attributes.Screen Off","entity.sensor.cellular_plumbus_battery_state.attributes.Low Power Mode","entity.sensor.cellular_plumbus_geocoded_location.attributes.Administrative Area","entity.sensor.cellular_plumbus_geocoded_location.attributes.Areas Of Interest","entity.sensor.cellular_plumbus_geocoded_location.attributes.Inland Water","entity.sensor.cellular_plumbus_geocoded_location.attributes.ISO Country Code","entity.sensor.cellular_plumbus_geocoded_location.attributes.Postal Code","entity.sensor.cellular_plumbus_geocoded_location.attributes.Sub Administrative Area","entity.sensor.cellular_plumbus_geocoded_location.attributes.Sub Locality","entity.sensor.cellular_plumbus_geocoded_location.attributes.Sub Thoroughfare","entity.sensor.cellular_plumbus_geocoded_location.attributes.Time Zone","entity.sensor.cellular_plumbus_sim_1.attributes.Allows VoIP","entity.sensor.cellular_plumbus_sim_1.attributes.Carrier ID","entity.sensor.cellular_plumbus_sim_1.attributes.Carrier Name","entity.sensor.cellular_plumbus_sim_1.attributes.Current Radio Technology","entity.sensor.cellular_plumbus_sim_1.attributes.ISO Country Code","entity.sensor.cellular_plumbus_sim_1.attributes.Mobile Country Code","entity.sensor.cellular_plumbus_sim_1.attributes.Mobile Network Code","entity.sensor.cellular_plumbus_sim_2.attributes.Allows VoIP","entity.sensor.cellular_plumbus_sim_2.attributes.Carrier ID","entity.sensor.cellular_plumbus_sim_2.attributes.Carrier Name","entity.sensor.cellular_plumbus_sim_2.attributes.ISO Country Code","entity.sensor.cellular_plumbus_sim_2.attributes.Mobile Country Code","entity.sensor.cellular_plumbus_sim_2.attributes.Mobile Network Code","entity.sensor.cellular_plumbus_storage.attributes.Available (Important)","entity.sensor.cellular_plumbus_storage.attributes.Available (Opportunistic)","entity.sensor.portable_plumbus_active_audio_input.attributes.Active Audio Input","entity.sensor.portable_plumbus_active_audio_input.attributes.All Audio Input","entity.sensor.portable_plumbus_active_audio_output.attributes.Active Audio Output","entity.sensor.portable_plumbus_active_audio_output.attributes.All Audio Output","entity.sensor.portable_plumbus_active_camera.attributes.Active Camera","entity.sensor.portable_plumbus_active_camera.attributes.All Camera","entity.sensor.portable_plumbus_connection_type.attributes.Hardware Address","entity.sensor.portable_plumbus_displays.attributes.Display IDs","entity.sensor.portable_plumbus_displays.attributes.Display Names","entity.sensor.portable_plumbus_frontmost_app.attributes.Bundle Identifier","entity.sensor.portable_plumbus_frontmost_app.attributes.Is Hidden","entity.sensor.portable_plumbus_frontmost_app.attributes.Launch Date","entity.sensor.portable_plumbus_frontmost_app.attributes.Owns Menu Bar","entity.sensor.portable_plumbus_geocoded_location.attributes.Administrative Area","entity.sensor.portable_plumbus_geocoded_location.attributes.Areas Of Interest","entity.sensor.portable_plumbus_geocoded_location.attributes.Inland Water","entity.sensor.portable_plumbus_geocoded_location.attributes.ISO Country Code","entity.sensor.portable_plumbus_geocoded_location.attributes.Postal Code","entity.sensor.portable_plumbus_geocoded_location.attributes.Sub Administrative Area","entity.sensor.portable_plumbus_geocoded_location.attributes.Sub Locality","entity.sensor.portable_plumbus_geocoded_location.attributes.Sub Thoroughfare","entity.sensor.portable_plumbus_geocoded_location.attributes.Time Zone","entity.sensor.portable_plumbus_internal_battery_level.attributes.Battery Provides Time Remaining","entity.sensor.portable_plumbus_internal_battery_level.attributes.Current Capacity","entity.sensor.portable_plumbus_internal_battery_level.attributes.Hardware Serial Number","entity.sensor.portable_plumbus_internal_battery_level.attributes.Is Charging","entity.sensor.portable_plumbus_internal_battery_level.attributes.Is Finishing Charge","entity.sensor.portable_plumbus_internal_battery_level.attributes.Is Present","entity.sensor.portable_plumbus_internal_battery_level.attributes.LPM Active","entity.sensor.portable_plumbus_internal_battery_level.attributes.Max Capacity","entity.sensor.portable_plumbus_internal_battery_level.attributes.Power Source ID","entity.sensor.portable_plumbus_internal_battery_level.attributes.Power Source State","entity.sensor.portable_plumbus_internal_battery_level.attributes.Time to Empty","entity.sensor.portable_plumbus_internal_battery_level.attributes.Time to Full Charge","entity.sensor.portable_plumbus_internal_battery_level.attributes.Transport Type","entity.sensor.portable_plumbus_internal_battery_state.attributes.Battery Provides Time Remaining","entity.sensor.portable_plumbus_internal_battery_state.attributes.Current Capacity","entity.sensor.portable_plumbus_internal_battery_state.attributes.Hardware Serial Number","entity.sensor.portable_plumbus_internal_battery_state.attributes.Is Charging","entity.sensor.portable_plumbus_internal_battery_state.attributes.Is Finishing Charge","entity.sensor.portable_plumbus_internal_battery_state.attributes.Is Present","entity.sensor.portable_plumbus_internal_battery_state.attributes.Low Power Mode","entity.sensor.portable_plumbus_internal_battery_state.attributes.LPM Active","entity.sensor.portable_plumbus_internal_battery_state.attributes.Max Capacity","entity.sensor.portable_plumbus_internal_battery_state.attributes.Power Source ID","entity.sensor.portable_plumbus_internal_battery_state.attributes.Power Source State","entity.sensor.portable_plumbus_internal_battery_state.attributes.Time to Empty","entity.sensor.portable_plumbus_internal_battery_state.attributes.Time to Full Charge","entity.sensor.portable_plumbus_internal_battery_state.attributes.Transport Type","entity.sensor.portable_plumbus_storage.attributes.Available (Important)","entity.sensor.portable_plumbus_storage.attributes.Available (Opportunistic)","entity.sensor.ultra_portable_plumbus_battery_state.attributes.Low Power Mode","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Administrative Area","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Areas Of Interest","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Inland Water","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.ISO Country Code","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Postal Code","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Sub Administrative Area","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Sub Locality","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Sub Thoroughfare","entity.sensor.ultra_portable_plumbus_geocoded_location.attributes.Time Zone","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Allows VoIP","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Carrier ID","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Carrier Name","entity.sensor.ultra_portable_plumbus_sim_1.attributes.ISO Country Code","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Mobile Country Code","entity.sensor.ultra_portable_plumbus_sim_1.attributes.Mobile Network Code","entity.sensor.ultra_portable_plumbus_storage.attributes.Available (Important)","entity.sensor.ultra_portable_plumbus_storage.attributes.Available (Opportunistic)","entity.sensor.work_phone_battery_state.attributes.Low Power Mode"]
+2025-11-23T01:17:56.240Z warn Instance/Wrapper/discord discord client disconnected
+2025-11-23T01:17:58.391Z info Instance/Controller Disable instance discord
+2025-11-23T01:17:59.060Z info Instance/Controller Enable instance discord
+2025-11-23T01:17:59.061Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:17:59.072Z info Instance/discord Connection started process 6366
+2025-11-23T01:17:59.218Z warn Instance/Wrapper/discord discord client disconnected
+2025-11-23T01:18:20.246Z info Instance/Controller Disable instance discord
+2025-11-23T01:18:20.652Z info Instance/Controller Enable instance discord
+2025-11-23T01:18:20.653Z info Instance/ModuleHost Starting connection: "discord" (JJ890kOuKJnPvOX4G4mKp)
+2025-11-23T01:18:20.666Z info Instance/discord Connection started process 6411
+2025-11-23T01:18:25.262Z Application: Companion looks to be stable

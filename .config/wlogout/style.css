@@ -1,0 +1,42 @@
+@import "colors.css";
+
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: alpha(@background, 0.75);
+}
+
+button {
+    border-radius: 100;
+    border-color: @scrim;
+	text-decoration-color: transparent;
+    color: transparent;
+	background-color: transparent;
+	border-style: solid;
+	border-width: 2px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+    padding: 0px;
+    margin: 50px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+button:focus, button:active, button:hover {
+	background-color: @tertiary;;
+    border-color: transparent;
+    color: @background;
+    border-width: 2px;
+	outline-style: none;
+}
+
+#lock      { background-image: image(url("icons/lock.svg")); }
+#logout    { background-image: image(url("icons/logout.svg")); }
+#suspend   { background-image: image(url("icons/suspend.svg")); }
+#hibernate { background-image: image(url("icons/hibernate.svg")); }
+#shutdown  { background-image: image(url("icons/shutdown.svg")); }
+#reboot    { background-image: image(url("icons/reboot.svg")); }

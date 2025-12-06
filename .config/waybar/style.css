@@ -1,0 +1,127 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "RedHatDisplay","JetBrainsMono Nerd Font Propo","Nerd Fonts Symbols"; 
+    font-size: 12.5px;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+tooltip {
+    border: .5px solid @tertiary_fixed_dim;
+    background: alpha(@surface_dim, .85);
+    color: @on_surface;
+    min-width: 60px;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+}
+tooltip label {
+    color: @on_surface;
+}
+
+window#waybar {
+    background: transparent;
+    color: transparent;
+    margin: 0px;
+    padding: 0px;    
+}
+
+.modules-left {
+    border: .5px solid @background;
+    background: @secondary_container;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.modules-right {
+    border: .5px solid @background;
+    background: @secondary_container;
+    color: transparent;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+#workspaces {  
+    background: transparent;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+#workspaces button {
+    border: .5px solid @background;
+    background: @secondary_container;
+    color: transparent;  
+    min-width: 40px;
+    min-height: 0px;
+    margin: 0px 3px;
+    padding: 0px;
+    border-radius: 15px;
+    transition: all 200ms ease-in-out;
+
+}
+#workspaces button:hover {
+    background: @secondary_container;
+    color: @tertiary_fixed;
+    min-width: 35px;
+    min-height: 0px;
+    margin: 0px 3px;
+    padding: 0px;
+    transition: 200ms ease-in-out;
+
+}    
+
+#workspaces button.urgent {
+    border: .5px solid @on_error;
+    background: @inverse_on_surface;
+    color: @on_error_container;
+    min-width: 45px;
+    min-height: 0px;
+    margin: 0px 3px;
+    padding: 0px;
+    border-radius: 15px;
+    transition: all 200ms ease-in-out;
+}
+
+#workspaces button.active {
+    background: @primary_container;
+    color: @tertiary;
+    min-width: 90px;
+    min-height: 0px;
+    margin: 0px 3px;
+    padding: 0px;
+    border-radius: 15px;
+    transition: all 200ms ease-in-out;
+}
+
+#custom-power,
+#temperature,
+#cpu,
+#memory,
+#custom-weather {
+    color: @tertiary_fixed;
+    min-height: 0px;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+#network,
+#bluetooth,
+#pulseaudio,
+#clock {
+    color: @tertiary_fixed;
+    min-height: 0px;
+    padding: 0px 10px;
+    margin: 0px;
+}

@@ -1,0 +1,52 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20251129_090903
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: Gatorade.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for Gatorade
+0     |Info:    [ProfileManager] Found file: Clown Shoes.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v4 profile found for Clown Shoes
+54    |Info:    [ResourceManager] Initializing HID interfaces: Success
+54    |Info:    ------------------------------------------------------
+54    |Info:    |               Start device detection               |
+54    |Info:    ------------------------------------------------------
+81    |Info:    ------------------------------------------------------
+81    |Info:    |             Detecting I2C interfaces               |
+81    |Info:    ------------------------------------------------------
+81    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:2486 Subsystem: 10DE:147A
+81    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 1022:790B Subsystem: 1462:7D53
+81    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:2486 Subsystem: 10DE:147A
+81    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:2486 Subsystem: 10DE:147A
+82    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 1022:790B Subsystem: 1462:7D53
+82    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 1022:790B Subsystem: 1462:7D53
+82    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:2486 Subsystem: 10DE:147A
+82    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:2486 Subsystem: 10DE:147A
+82    |Info:    ------------------------------------------------------
+82    |Info:    |               Detecting I2C devices                |
+82    |Info:    ------------------------------------------------------
+393   |Info:    [ENE DRAM] Registering RGB controller
+578   |Info:    [ENE DRAM] Registering RGB controller
+1427  |Info:    ------------------------------------------------------
+1427  |Info:    |            Detecting I2C DIMM modules              |
+1427  |Info:    ------------------------------------------------------
+2308  |Info:    [ResourceManager] Detected occupied slot 3, bus 5, type DDR4
+3588  |Info:    [ResourceManager] Detected occupied slot 4, bus 5, type DDR4
+4622  |Info:    ------------------------------------------------------
+4622  |Info:    |               Detecting I2C PCI devices            |
+4622  |Info:    ------------------------------------------------------
+4624  |Info:    ------------------------------------------------------
+4624  |Info:    |               Detecting HID devices                |
+4624  |Info:    ------------------------------------------------------
+4676  |Info:    [Logitech G915 Wireless RGB Mechanical Gaming Keyboard] Registering RGB controller
+4745  |Info:    [MSI MPG X570S EDGE MAX WIFI (MS-7D53)] Registering RGB controller
+4745  |Info:    ------------------------------------------------------
+4745  |Info:    |            Detecting libusb HID devices            |
+4745  |Info:    ------------------------------------------------------
+4819  |Info:    ------------------------------------------------------
+4819  |Info:    |              Detecting other devices               |
+4819  |Info:    ------------------------------------------------------
+4858  |Info:    [ResourceManager] Calling Post-detection callbacks
+4858  |Info:    ------------------------------------------------------
+4858  |Info:    |                Detection completed                 |
+4858  |Info:    ------------------------------------------------------
