@@ -109,7 +109,7 @@ yay -S --needed --noconfirm \
 fi
 
 if [[ "$extra_choice" == "y" ]]; then
-    systemctl enable --now bluetooth
+#    systemctl enable --now bluetooth
     systemctl --user enable --now pipewire.service pipewire-pulse.service
 fi
 
