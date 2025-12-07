@@ -86,6 +86,23 @@ sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 
 systemctl --user enable --now hyprpolkitagent swww waybar swaync swww hypridle hyprlock
 
+# Restart all services in current session
+pkill hyprpolkitagent
+pkill swww-daemon
+pkill waybar
+pkill swaync
+pkill hypridle
+pkill hyprlock
+
+hyprpolkitagent &
+swww-daemon &
+waybar &
+swaync &
+hypridle &
+hyprlock &
+
+sleep 1
+
 #if [[ "$extra_choice" == "y" ]]; then
 #    systemctl enable --now bluetooth
 #    systemctl --user enable --now pipewire.service pipewire-pulse.service
