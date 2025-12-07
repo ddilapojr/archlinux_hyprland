@@ -7,8 +7,6 @@ if [[ "$backup_choice" == "y" ]]; then
     echo "Backup of .config created at ~/.config_backup"
 fi
 
-    #vscodium \
-
 yay -S --needed --noconfirm \
     hyprland \
     hypridle \
@@ -39,9 +37,6 @@ yay -S --needed --noconfirm \
     wttrbar \
     pavucontrol \
     helvum \
-    blueman \
-    bluez \
-    bluez-utils \
     ghostty \
     nemo \
     samba \
@@ -49,7 +44,38 @@ yay -S --needed --noconfirm \
     file-roller \
     unzip \
 
-systemctl --user enable --now hyprpolkitagent matugen waybar swaync swww hypridle hyprlock
+read -p "Do you want to install your other cool shit? (y/n, default: y): " extra_choice
+extra_choice=${extra_choice:-y}
+if [[ "$extra_choice" == "y" ]]; then
+yay -S --needed --noconfirm \
+    brave-bin \
+    companion \
+    input-remapper \
+    vscodium-bin \
+    openrgb \
+    steam \
+    xone-dkms \
+    xone-dongle-firmware \
+    discord \
+    snapper \
+    btrfs-assistant \
+    btrfs-progs \
+    grub-btrfs \
+    font-manager \
+    htop \
+    smartmontools \
+    vim \
+    vlc \
+    vlc-plugin-ffmpeg \
+    blueman \
+    bluez \
+    bluez-utils \
+    pipewire \
+    pipewire-alsa \
+    pipewire-jack \
+    pipewire-pulse \
+    libpulse \    
+fi
 
 # Copy files
 sudo cp -a $HOME/archlinux_hyprland/.config/* ~/.config/
@@ -58,10 +84,17 @@ sudo cp -a $HOME/archlinux_hyprland/etc/* /etc/
 sudo cp -a $HOME/archlinux_hyprland/usr/* /usr/
 sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 
+systemctl --user enable --now hyprpolkitagent swww-daemon waybar swaync swww hypridle hyprlock
+
+if [[ "$extra_choice" == "y" ]]; then
+    systemctl enable --now bluetooth
+    systemctl --user enable --now pipewire.service pipewire-pulse.service
+fi
+
 read -p "Do you want use hyprexpo? (y/n, default: y): " hyprexpo_choice
 hyprexpo_choice=${hyprexpo_choice:-y}
 if [[ "$hyprexpo_choice" == "y" ]]; then
-    sudo pacman -S --needed --noconfirm cmake meson ninja pkg-config cpio gcc
+    sudo pacman -S --needed --noconfirm --overwrite meson cpio cmake
     hyprpm update
     hyprpm add https://github.com/hyprwm/hyprland-plugins
     hyprpm enable hyprexpo

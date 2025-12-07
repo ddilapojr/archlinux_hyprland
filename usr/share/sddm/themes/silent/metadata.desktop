@@ -13,8 +13,8 @@ Screenshot=docs/previews/default.png
 TranslationsDirectory=translations
 QtVersion=6
 
-; ConfigFile=configs/morning breeze.conf
- ConfigFile=configs/cyberpunk city.conf
+ ConfigFile=configs/morning breeze.conf
+; ConfigFile=configs/cyberpunk city.conf
 ; ConfigFile=configs/default.conf
 ; ConfigFile=configs/default-left.conf
 ; ConfigFile=configs/default-right.conf
