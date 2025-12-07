@@ -116,7 +116,7 @@ fi
 read -p "Do you want use hyprexpo? (y/n, default: y): " hyprexpo_choice
 hyprexpo_choice=${hyprexpo_choice:-y}
 if [[ "$hyprexpo_choice" == "y" ]]; then
-    sudo pacman -S --needed --noconfirm --overwrite meson cpio cmake
+    yay -S --needed --noconfirm meson cpio cmake
     hyprpm update
     hyprpm add https://github.com/hyprwm/hyprland-plugins
     hyprpm enable hyprexpo
