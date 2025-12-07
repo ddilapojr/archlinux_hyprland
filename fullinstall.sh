@@ -110,5 +110,5 @@ read -p "Do you want to reboot now? (y/n, default: n): " reboot_choice
 reboot_choice=${reboot_choice:-n}
 if [[ "$reboot_choice" == "y" ]]; then
     echo "Rebooting..."
-    systemctl reboot
+    systemctl reboot now
 fi
