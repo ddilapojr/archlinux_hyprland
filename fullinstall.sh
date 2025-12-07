@@ -7,9 +7,10 @@ if [[ "$backup_choice" == "y" ]]; then
     echo "Backup of .config created at ~/.config_backup"
 fi
 
-yay -S --needed --noconfirm\
+yay -S --needed --noconfirm \
     hyprland \
     hypridle \
+    brightnessctl \
     hyprlock \
     hyprshot \
     hyprpolkitagent \
@@ -51,6 +52,11 @@ sudo cp -a $HOME/archlinux_hyprland/etc/* /etc/
 sudo cp -a $HOME/archlinux_hyprland/usr/* /usr/
 sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 
+read -p "Enter your location for weather (e.g., 08620,US or CityName): " user_location
+if [[ -n "$user_location" ]]; then
+    sed -i "s|--location [^ ]*|--location $user_location|" ~/.config/waybar/config.jsonc
+fi
+
 systemctl --user enable --now hyprpolkitagent swww waybar swaync swww hypridle hyprlock
 
 # Restart all services in current session (detached from terminal)
@@ -72,7 +78,7 @@ sleep 1
 read -p "Do you want to install your other cool shit? (y/n, default: y): " extra_choice
 extra_choice=${extra_choice:-y}
 if [[ "$extra_choice" == "y" ]]; then
-yay -S --needed --noconfirm\
+yay -S --needed --noconfirm \
     brave-bin \
     companion \
     input-remapper \
@@ -121,7 +127,7 @@ fi
 echo "Opening wallpaper selector..."
 python3 ~/.config/matugen/scripts/wallpaper-select.py
 
-    notify-send "Good job $USER" "\nYou did it! Open Terminal with MOD+T\n-EF"
+    notify-send "Good job $USER" "\nYou did it! Open Terminal with MOD+T\n"
 
 read -p "Do you want to reboot now? (y/n, default: n): " reboot_choice
 reboot_choice=${reboot_choice:-n}
