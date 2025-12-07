@@ -44,6 +44,32 @@ yay -S --needed \
     file-roller \
     unzip \
 
+# Copy files
+sudo cp -a $HOME/archlinux_hyprland/.config/* ~/.config/
+sudo cp -a $HOME/archlinux_hyprland/.local/* ~/.local/
+sudo cp -a $HOME/archlinux_hyprland/etc/* /etc/
+sudo cp -a $HOME/archlinux_hyprland/usr/* /usr/
+sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
+
+systemctl --user enable --now hyprpolkitagent swww waybar swaync swww hypridle hyprlock
+
+# Restart all services in current session (detached from terminal)
+pkill hyprpolkitagent
+pkill swww-daemon
+pkill waybar
+pkill swaync
+pkill hypridle
+pkill hyprlock
+
+hyprpolkitagent > /dev/null 2>&1 & disown
+swww-daemon > /dev/null 2>&1 & disown
+waybar > /dev/null 2>&1 & disown
+swaync > /dev/null 2>&1 & disown
+hypridle > /dev/null 2>&1 & disown
+hyprlock > /dev/null 2>&1 & disown
+
+sleep 1
+
 read -p "Do you want to install your other cool shit? (y/n, default: y): " extra_choice
 extra_choice=${extra_choice:-y}
 if [[ "$extra_choice" == "y" ]]; then
@@ -76,32 +102,6 @@ yay -S --needed \
     pipewire-pulse \
     libpulse \    
 fi
-
-# Copy files
-sudo cp -a $HOME/archlinux_hyprland/.config/* ~/.config/
-sudo cp -a $HOME/archlinux_hyprland/.local/* ~/.local/
-sudo cp -a $HOME/archlinux_hyprland/etc/* /etc/
-sudo cp -a $HOME/archlinux_hyprland/usr/* /usr/
-sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
-
-systemctl --user enable --now hyprpolkitagent swww waybar swaync swww hypridle hyprlock
-
-# Restart all services in current session
-pkill hyprpolkitagent
-pkill swww-daemon
-pkill waybar
-pkill swaync
-pkill hypridle
-pkill hyprlock
-
-hyprpolkitagent &
-swww-daemon &
-waybar &
-swaync &
-hypridle &
-hyprlock &
-
-sleep 1
 
 #if [[ "$extra_choice" == "y" ]]; then
 #    systemctl enable --now bluetooth
