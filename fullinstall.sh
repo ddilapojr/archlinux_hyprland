@@ -39,7 +39,7 @@ yay -S --needed --noconfirm \
     qt6ct \
     kvantum \
     kvantum-qt5 \
-    wttr \
+    wttrbar \
     pavucontrol \
     helvum \
     blueman \
@@ -52,6 +52,8 @@ yay -S --needed --noconfirm \
     file-roller \
     unzip \
 
+systemctl --user enable --now hyprpolkitagent matugen waybar swaync swww hypridle hyprlock
+
 # Copy files
 sudo cp -a $HOME/archlinux_hyprland/.config/* ~/.config/
 sudo cp -a $HOME/archlinux_hyprland/.local/* ~/.local/
@@ -62,7 +64,7 @@ sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 read -p "Do you want use hyprexpo? (y/n, default: y): " hyprexpo_choice
 hyprexpo_choice=${hyprexpo_choice:-y}
 if [[ "$hyprexpo_choice" == "y" ]]; then
-    yay -S --needed --noconfirm meson cpio cmake
+    yay -S --needed --noconfirm cmake meson ninja pkg-config cpio
     hyprpm update
     hyprpm add https://github.com/hyprwm/hyprland-plugins
     hyprpm enable hyprexpo
