@@ -7,7 +7,7 @@ if [[ "$backup_choice" == "y" ]]; then
     echo "Backup of .config created at ~/.config_backup"
 fi
 
-yay -S --needed \
+yay -S --needed --noconfirm\
     hyprland \
     hypridle \
     hyprlock \
@@ -57,6 +57,7 @@ systemctl --user enable --now hyprpolkitagent swww waybar swaync swww hypridle h
 pkill hyprpolkitagent
 pkill swww-daemon
 pkill waybar
+pkill dunst
 pkill swaync
 pkill hypridle
 pkill hyprlock
@@ -73,11 +74,11 @@ sleep 1
 read -p "Do you want to install your other cool shit? (y/n, default: y): " extra_choice
 extra_choice=${extra_choice:-y}
 if [[ "$extra_choice" == "y" ]]; then
-yay -S --needed \
+yay -S --needed --noconfirm\
     brave-bin \
     companion \
     input-remapper \
-    vscodium \
+    vscode \
     openrgb \
     steam \
     xone-dkms \
@@ -103,10 +104,10 @@ yay -S --needed \
     libpulse \    
 fi
 
-#if [[ "$extra_choice" == "y" ]]; then
-#    systemctl enable --now bluetooth
-#    systemctl --user enable --now pipewire.service pipewire-pulse.service
-#fi
+if [[ "$extra_choice" == "y" ]]; then
+    systemctl enable --now bluetooth
+    systemctl --user enable --now pipewire.service pipewire-pulse.service
+fi
 
 read -p "Do you want use hyprexpo? (y/n, default: y): " hyprexpo_choice
 hyprexpo_choice=${hyprexpo_choice:-y}
