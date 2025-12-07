@@ -85,7 +85,7 @@ window#waybar {
 #workspaces button.urgent {
     border: .5px solid @on_error;
     background: @inverse_on_surface;
-    color: @on_error_container;
+    color: @error_container;
     min-width: 45px;
     min-height: 0px;
     margin: 0px 3px;
@@ -116,12 +116,29 @@ window#waybar {
     margin: 0px;
 }
 
+#temperature.critical{
+    color: @error_container;
+}
+
 #network,
 #bluetooth,
 #pulseaudio,
+#battery,
 #clock {
     color: @tertiary_fixed;
     min-height: 0px;
     padding: 0px 10px;
     margin: 0px;
+}
+
+#battery.critical {
+    color: @error_container; 
+}
+
+#battery.warning {
+    color: #ff9900;
+}
+
+#battery.full {
+    color: #00cc00;
 }
