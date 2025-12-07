@@ -13,68 +13,44 @@ fi
     #vscodium \
 
 yay -S --needed --noconfirm \
-    brave-bin \
-    companion \
-    input-remapper \
+    hyprland \
+    hypridle \
+    hyprlock \
+    hyprshot \
+    hyprpolkitagent \
+    matugen \
+    waybar \
+    swww \
+    rofi \
+    sddm \
+    sddm-kcm \
     wlogout \
-    wttrbar \
-    xone-dkms \
-    xone-dongle-firmware \
-    blueman \
-    bluez \
-    bluez-utils \
-    btrfs-assistant \
-    btrfs-progs \
-    discord \
-    file-roller \
-    font-manager \
-    ghostty \
-    grub-btrfs \
+    starship \
+    swaync \
+    ttf-jetbrains-mono-nerd \
     gtk3 \
     gtk4 \
-    helvum \
-    htop \
-    hypridle \
-    hyprland \
-    hyprlock \
-    hyprpolkitagent \
-    hyprshot \
-    kvantum \
-    kvantum-qt5 \
-    libpulse \
-    matugen \
-    nemo \
     nwg-look \
-    openrgb \
-    pavucontrol \
-    pipewire \
-    pipewire-alsa \
-    pipewire-jack \
-    pipewire-pulse \
     qt5-wayland \
     qt5ct \
     qt6-multimedia-ffmpeg \
     qt6-virtualkeyboard \
     qt6-wayland \
     qt6ct \
-    rofi \
+    kvantum \
+    kvantum-qt5 \
+    wttrbar \
+    pavucontrol \
+    helvum \
+    blueman \
+    bluez \
+    bluez-utils \
+    ghostty \
+    nemo \
     samba \
-    sddm \
-    sddm-kcm \
-    smartmontools \
-    snapper \
-    starship \
-    steam \
-    swaync \
-    swww \
-    ttf-jetbrains-mono-nerd \
-    unzip \
-    vim \
-    vlc \
-    vlc-plugin-ffmpeg \
-    waybar \
     yad \
-    zram-generator
+    file-roller \
+    unzip \
 
 systemctl enable bluetooth
 systemctl --user enable pipewire.service
