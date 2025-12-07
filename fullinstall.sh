@@ -51,7 +51,7 @@ yay -S --needed --noconfirm \
     brave-bin \
     companion \
     input-remapper \
-    vscodium-bin \
+    vscodium \
     openrgb \
     steam \
     xone-dkms \
@@ -86,10 +86,10 @@ sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 
 systemctl --user enable --now hyprpolkitagent swww-daemon waybar swaync swww hypridle hyprlock
 
-if [[ "$extra_choice" == "y" ]]; then
-    systemctl enable --now bluetooth
-    systemctl --user enable --now pipewire.service pipewire-pulse.service
-fi
+#if [[ "$extra_choice" == "y" ]]; then
+#    systemctl enable --now bluetooth
+#    systemctl --user enable --now pipewire.service pipewire-pulse.service
+#fi
 
 read -p "Do you want use hyprexpo? (y/n, default: y): " hyprexpo_choice
 hyprexpo_choice=${hyprexpo_choice:-y}
