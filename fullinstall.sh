@@ -57,7 +57,7 @@ if [[ -n "$user_location" ]]; then
     sed -i "s|--location [^ ]*|--location $user_location|" ~/.config/waybar/config.jsonc
 fi
 
-systemctl --user enable --now hyprpolkitagent swww waybar swaync swww hypridle hyprlock
+systemctl --user enable --now hyprpolkitagent waybar swaync hypridle
 
 # Restart all services in current session (detached from terminal)
 pkill hyprpolkitagent
