@@ -122,6 +122,7 @@ if [[ "$hyprexpo_choice" == "y" ]]; then
     hyprpm enable hyprexpo
 else
     sed -i '/bind = SUPER, TAB, hyprexpo:expo, toggle/s/^/#/' ~/.config/hypr/modules/binds.conf
+    sed -i '/gesture = 3, up, dispatcher, hyprexpo:expo/s/^/#/' ~/.config/hypr/modules/gestures.conf
 fi
 
 echo "Opening wallpaper selector..."
