@@ -39,7 +39,7 @@ yay -S --needed --noconfirm \
     qt6ct \
     kvantum \
     kvantum-qt5 \
-    wttrbar \
+    wttr \
     pavucontrol \
     helvum \
     blueman \
@@ -51,12 +51,6 @@ yay -S --needed --noconfirm \
     yad \
     file-roller \
     unzip \
-
-systemctl enable bluetooth
-systemctl --user enable pipewire.service
-systemctl --user enable pipewire-pulse.service
-systemctl --user start pipewire.service
-systemctl --user start pipewire-pulse.service
 
 # Copy files
 sudo cp -a $HOME/archlinux_hyprland/.config/* ~/.config/
