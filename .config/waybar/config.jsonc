@@ -68,7 +68,7 @@
     "format-ethernet": "{ipaddr}/{cidr} 󰈀",
     "format-disconnected": "󰤮", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr}",
-    "tooltip-format-wifi": "{ipaddr}/{cidr}\n{essid} ({signalStrength}%) {icon}",
+    "tooltip-format-wifi": "{ipaddr}/{cidr}\n{essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "{ifname} 󰈀",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
@@ -110,7 +110,10 @@
     },
     "scroll-step": 1,
     "on-click": "pavucontrol",
-    "ignored-sinks": ["Easy Effects Sink"]
+    "ignored-sinks": ["Easy Effects Sink"],
+
+    "tooltip-format": "{desc} ({volume}%)"
+
   },
 
   "battery": {
