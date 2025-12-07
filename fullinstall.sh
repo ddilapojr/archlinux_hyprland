@@ -47,7 +47,7 @@ yay -S --needed --noconfirm \
 read -p "Do you want to install your other cool shit? (y/n, default: y): " extra_choice
 extra_choice=${extra_choice:-y}
 if [[ "$extra_choice" == "y" ]]; then
-yay -S --needed --noconfirm \
+yay -S --needed \
     brave-bin \
     companion \
     input-remapper \
@@ -84,7 +84,7 @@ sudo cp -a $HOME/archlinux_hyprland/etc/* /etc/
 sudo cp -a $HOME/archlinux_hyprland/usr/* /usr/
 sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 
-systemctl --user enable --now hyprpolkitagent swww-daemon waybar swaync swww hypridle hyprlock
+systemctl --user enable --now hyprpolkitagent swww waybar swaync swww hypridle hyprlock
 
 #if [[ "$extra_choice" == "y" ]]; then
 #    systemctl enable --now bluetooth
