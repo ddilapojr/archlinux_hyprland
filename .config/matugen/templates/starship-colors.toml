@@ -161,7 +161,7 @@ format = '[[ $symbol( $version)( $environment) ](fg:black bg:color2)]($style)'
 
 [time]
 disabled = false
-time_format = "%R"
+time_format = "%-I:%M%P"
 style = "bg:color1"
 format = '[[  $time ](fg:black bg:color1)]($style)'
 

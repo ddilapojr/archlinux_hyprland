@@ -50,5 +50,5 @@
 
 theme = "Matugen"
 
-#font-family = "RedHatDisplay"
-font-size = 10
+font-family = RedHatMono
+font-size = 11
