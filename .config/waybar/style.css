@@ -117,7 +117,7 @@ window#waybar {
 }
 
 #temperature.critical{
-    color: @error_container;
+    color: #cc0000;
 }
 
 #network,
@@ -132,7 +132,7 @@ window#waybar {
 }
 
 #battery.critical {
-    color: @error_container; 
+    color: #cc0000; 
 }
 
 #battery.warning {
