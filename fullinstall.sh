@@ -60,14 +60,12 @@ pkill waybar
 pkill dunst
 pkill swaync
 pkill hypridle
-pkill hyprlock
 
 hyprpolkitagent > /dev/null 2>&1 & disown
 swww-daemon > /dev/null 2>&1 & disown
 waybar > /dev/null 2>&1 & disown
 swaync > /dev/null 2>&1 & disown
 hypridle > /dev/null 2>&1 & disown
-hyprlock > /dev/null 2>&1 & disown
 
 sleep 1
 
@@ -123,7 +121,7 @@ fi
 echo "Opening wallpaper selector..."
 python3 ~/.config/matugen/scripts/wallpaper-select.py
 
-    notify-send "Good job $USER" "\nYou did it! Open Terminal with MOD+T.n-EF"
+    notify-send "Good job $USER" "\nYou did it! Open Terminal with MOD+T\n-EF"
 
 read -p "Do you want to reboot now? (y/n, default: n): " reboot_choice
 reboot_choice=${reboot_choice:-n}
