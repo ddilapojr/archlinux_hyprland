@@ -94,7 +94,7 @@
 //    "format-bluetooth": "{volume}% {icon}",
     "format-muted": "",
     "format-icons": {
-      "alsa_output.usb-FIIO_FiiO_K11_R2R-01.analog-stereo":  "",
+      "alsa_output.usb-FIIO_FiiO_K11_R2R-01.analog-stereo": "",
       "headphone": "",
       "hands-free": "",
       "headset": "",
