@@ -52,7 +52,7 @@ sudo cp -a $HOME/archlinux_hyprland/etc/* /etc/
 sudo cp -a $HOME/archlinux_hyprland/usr/* /usr/
 sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 
-read -p "Enter your location for weather (e.g., 08620,US or CityName): " user_location
+read -p "Enter your location for weather (e.g., ZIP,Country or CityName): " user_location
 if [[ -n "$user_location" ]]; then
     sed -i "s|--location [^ ]*|--location $user_location|" ~/.config/waybar/config.jsonc
 fi
@@ -127,7 +127,7 @@ fi
 echo "Opening wallpaper selector..."
 python3 ~/.config/matugen/scripts/wallpaper-select.py
 
-    notify-send "Good job $USER" "\nYou did it! Open Terminal with MOD+T\n"
+    notify-send "Good job $USER" "\nYou did it! Open Terminal with MOD+T"
 
 read -p "Do you want to reboot now? (y/n, default: n): " reboot_choice
 reboot_choice=${reboot_choice:-n}
