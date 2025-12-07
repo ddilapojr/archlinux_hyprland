@@ -122,7 +122,8 @@ fi
 
 echo "Opening wallpaper selector..."
 python3 ~/.config/matugen/scripts/wallpaper-select.py
-notify-send "Good job $USER, You did it! Open Terminal with MOD+T."
+
+    notify-send "Good job $USER" "\nYou did it! Open Terminal with MOD+T.n-EF"
 
 read -p "Do you want to reboot now? (y/n, default: n): " reboot_choice
 reboot_choice=${reboot_choice:-n}
