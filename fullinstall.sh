@@ -1,7 +1,4 @@
 #!/bin/bash
-sudo -v
-echo "$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER-temp > /dev/null
-trap 'sudo rm -f /etc/sudoers.d/$USER-temp 2>/dev/null' EXIT
 
 read -p "Do you want to backup your current .config directory? (y/n, default: y): " backup_choice
 backup_choice=${backup_choice:-y}
@@ -64,7 +61,7 @@ sudo cp -a $HOME/archlinux_hyprland/.bashrc ~/.bashrc
 read -p "Do you want use hyprexpo? (y/n, default: y): " hyprexpo_choice
 hyprexpo_choice=${hyprexpo_choice:-y}
 if [[ "$hyprexpo_choice" == "y" ]]; then
-    yay -S --needed --noconfirm cmake meson ninja pkg-config cpio
+    sudo pacman -S --needed --noconfirm cmake meson ninja pkg-config cpio gcc
     hyprpm update
     hyprpm add https://github.com/hyprwm/hyprland-plugins
     hyprpm enable hyprexpo
