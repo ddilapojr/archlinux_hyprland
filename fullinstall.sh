@@ -7,7 +7,7 @@ if [[ "$backup_choice" == "y" ]]; then
     echo "Backup of .config created at ~/.config_backup"
 fi
 
-yay -S --needed --noconfirm \
+yay -S --needed \
     hyprland \
     hypridle \
     hyprlock \
