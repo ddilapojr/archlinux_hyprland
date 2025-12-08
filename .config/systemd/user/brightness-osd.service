@@ -1,0 +1,11 @@
+[Unit]
+Description=Brightness OSD Notification Service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/brightness-osd.sh
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

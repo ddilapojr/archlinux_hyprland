@@ -58,8 +58,8 @@ if [[ -n "$user_location" ]]; then
 fi
 
 systemctl --user enable --now hyprpolkitagent waybar swaync hypridle
+systemctl --user enable --now volume-osd brightness-osd
 
-# Restart all services in current session (detached from terminal)
 pkill hyprpolkitagent
 pkill swww-daemon
 pkill waybar
