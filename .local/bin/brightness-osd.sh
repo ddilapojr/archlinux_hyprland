@@ -1,46 +1,23 @@
 #!/bin/bash
 
-# ============================================================================
-# CONFIGURATION - Edit these values to customize
-# ============================================================================
-
-# Icon settings - Use system icon names
-ICON_HIGH="display-brightness-high"
-ICON_MEDIUM="display-brightness-medium"
-ICON_LOW="display-brightness-low"
-ICON_OFF="display-brightness-off"
-
-# Display settings
-TIMEOUT=1500            # Notification timeout in milliseconds
-
-# Brightness thresholds (when to switch icons)
-THRESHOLD_HIGH=70       # Brightness >= this uses high icon
-THRESHOLD_MEDIUM=30     # Brightness >= this uses medium icon (below uses low)
-THRESHOLD_OFF=5         # Brightness <= this uses off icon
-
-# ============================================================================
-# Script logic - no need to edit below this line
-# ============================================================================
-
 get_brightness() {
-    brightnessctl get | awk -v max="$(brightnessctl max)" '{printf "%.0f", ($1/max)*100}'
+    brightnessctl -m | cut -d',' -f4 | tr -d '%'
 }
 
 send_notification() {
     local brightness=$(get_brightness)
     
-    # Send notification via D-Bus - no icon, no text, just progress bar
     gdbus call --session \
         --dest org.freedesktop.Notifications \
         --object-path /org/freedesktop/Notifications \
         --method org.freedesktop.Notifications.Notify \
-        "brightness-osd" 0 "" "" "" "[]" \
-        "{'value': <$brightness>, 'x-canonical-private-synchronous': <'brightness'>}" "$TIMEOUT" >/dev/null 2>&1
+        "brightness-osd" 0 "" "Brightness" "" "[]" \
+        "{'value': <$brightness>, 'x-canonical-private-synchronous': <'brightness'>}" 1500 >/dev/null 2>&1
 }
 
-# Check if brightnessctl is available
+# Check if brightnessctl exists
 if ! command -v brightnessctl &> /dev/null; then
-    echo "Error: brightnessctl not found. Please install it: sudo pacman -S brightnessctl"
+    echo "Error: brightnessctl not found. Please install brightnessctl."
     exit 1
 fi
 
@@ -48,19 +25,6 @@ fi
 send_notification
 
 # Monitor for brightness changes using inotify
-DEVICE=$(brightnessctl --list | grep -oP "Device '.*?'" | head -1 | cut -d"'" -f2)
-BRIGHTNESS_PATH="/sys/class/backlight/$DEVICE/brightness"
-
-if [ ! -f "$BRIGHTNESS_PATH" ]; then
-    # Fallback: try to find any backlight device
-    BRIGHTNESS_PATH=$(find /sys/class/backlight/*/brightness 2>/dev/null | head -1)
-fi
-
-if [ -f "$BRIGHTNESS_PATH" ]; then
-    inotifywait -m -e modify "$BRIGHTNESS_PATH" 2>/dev/null | while read -r; do
-        send_notification
-    done
-else
-    echo "Error: Could not find brightness device path"
-    exit 1
-fi
+brightnessctl -m | tail -n +2 | while read -r line; do
+    send_notification
+done
