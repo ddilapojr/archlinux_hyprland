@@ -82,7 +82,7 @@ yay -S --needed --noconfirm \
     brave-bin \
     companion \
     input-remapper \
-    vscode \
+    vscodium \
     openrgb \
     steam \
     xone-dkms \
