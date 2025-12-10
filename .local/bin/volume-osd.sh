@@ -1,36 +1,23 @@
 #!/bin/bash
 
-# Configuration
-SHOW_HEADER=true
-
 send_notification() {
-    local volume=$1
-    local title=""
-    
-    if [ "$SHOW_HEADER" = true ]; then
-        title="Volume"
-    fi
+    local volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf "%.0f", $2 * 100}')
     
     gdbus call --session \
         --dest org.freedesktop.Notifications \
         --object-path /org/freedesktop/Notifications \
         --method org.freedesktop.Notifications.Notify \
-        "volume-osd" 0 "" "$title" "" "[]" \
+        "volume-osd" 0 "" "Volume" "" "[]" \
         "{'value': <$volume>, 'x-canonical-private-synchronous': <'volume'>}" 1500 >/dev/null 2>&1
 }
 
-# Check if wpctl exists
-if ! command -v wpctl &> /dev/null; then
-    echo "Error: wpctl not found. Please install wireplumber."
-    exit 1
-fi
+# Check wpctl
+command -v wpctl &>/dev/null || { echo "wpctl not found"; exit 1; }
 
-# Get initial volume and send notification
-volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf "%.0f", $2 * 100}')
-send_notification "$volume"
+# Initial
+send_notification
 
-# Monitor for volume changes - extract volume directly from each event line
-pactl subscribe | grep --line-buffered "Event 'change' on sink" | while read -r line; do
-    volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf "%.0f", $2 * 100}')
-    send_notification "$volume"
+# React instantly, no polling
+pactl subscribe 2>/dev/null | grep --line-buffered "change.*sink" | while read -r; do
+    send_notification
 done

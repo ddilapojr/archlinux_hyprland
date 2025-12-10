@@ -1,11 +1,7 @@
 #!/bin/bash
 
-get_brightness() {
-    brightnessctl -m | cut -d',' -f4 | tr -d '%'
-}
-
 send_notification() {
-    local brightness=$(get_brightness)
+    local brightness=$(brightnessctl -m | cut -d',' -f4 | tr -d '%')
     
     gdbus call --session \
         --dest org.freedesktop.Notifications \
@@ -15,16 +11,14 @@ send_notification() {
         "{'value': <$brightness>, 'x-canonical-private-synchronous': <'brightness'>}" 1500 >/dev/null 2>&1
 }
 
-# Check if brightnessctl exists
-if ! command -v brightnessctl &> /dev/null; then
-    echo "Error: brightnessctl not found. Please install brightnessctl."
-    exit 1
-fi
+# Check brightnessctl
+command -v brightnessctl &>/dev/null || { echo "brightnessctl not found"; exit 1; }
 
-# Send initial notification
+# Initial
 send_notification
 
-# Monitor for brightness changes using inotify
-brightnessctl -m | tail -n +2 | while read -r line; do
-    send_notification
-done
+# React instantly, no polling
+inotifywait -qq -e close_write /sys/class/backlight/*/brightness |
+    while read -r; do
+        send_notification
+    done

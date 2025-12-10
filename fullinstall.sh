@@ -22,7 +22,7 @@ yay -S --needed --noconfirm \
     sddm-kcm \
     wlogout \
     starship \
-    swaync \
+    mako \
     ttf-jetbrains-mono-nerd \
     gtk3 \
     gtk4 \
@@ -58,7 +58,7 @@ if [[ -n "$user_location" ]]; then
 fi
 
 systemctl --user enable --now hyprpolkitagent waybar swaync hypridle
-systemctl --user enable --now volume-osd brightness-osd
+systemctl --user enable --now volume-osd brightness-osd caps-lock-osd num-lock-osd
 
 pkill hyprpolkitagent
 pkill swww-daemon
@@ -70,7 +70,7 @@ pkill hypridle
 hyprpolkitagent > /dev/null 2>&1 & disown
 swww-daemon > /dev/null 2>&1 & disown
 waybar > /dev/null 2>&1 & disown
-swaync > /dev/null 2>&1 & disown
+mako > /dev/null 2>&1 & disown
 hypridle > /dev/null 2>&1 & disown
 
 sleep 1

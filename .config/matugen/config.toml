@@ -49,15 +49,15 @@ post_hook = 'pkill -SIGUSR1 kitty'
 input_path = '~/.config/matugen/templates/rofi-colors.rasi'
 output_path = '~/.config/rofi/colors.rasi'
 
-#[templates.dunst]
-#input_path =  '~/.config/matugen/templates/dunstrc-colors'
-#output_path = '~/.config/dunst/dunstrc'
-#post_hook = 'dunstctl reload'
+[templates.mako]
+input_path =  '~/.config/matugen/templates/mako-colors'
+output_path = '~/.config/mako/config'
+post_hook = 'makoctl reload'
 
-[templates.swaync]
-input_path = '~/.config/matugen/templates/colors.css'
-output_path = '~/.config/swaync/colors.css'
-post_hook = 'pkill -SIGUSR2 swaync'
+#[templates.swaync]
+#input_path = '~/.config/matugen/templates/colors.css'
+#output_path = '~/.config/swaync/colors.css'
+#post_hook = 'pkill -SIGUSR2 swaync'
 
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/colors.css'

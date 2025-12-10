@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Caps Lock OSD Notification Service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/caps-lock-osd.sh
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
