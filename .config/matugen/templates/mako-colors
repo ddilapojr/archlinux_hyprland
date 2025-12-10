@@ -57,7 +57,7 @@ default-timeout=500
 margin=1250
 anchor=top-center
 
-[app-name="caps-lock-osd"]
+[app-name="capslock-osd"]
 border-color={{colors.tertiary_container.default.hex}}
 text-alignment=center
 width=125
@@ -67,7 +67,7 @@ default-timeout=1000
 margin=1250
 anchor=top-center
 
-[app-name="num-lock-osd"]
+[app-name="numlock-osd"]
 border-color={{colors.tertiary_container.default.hex}}
 text-alignment=center
 width=125

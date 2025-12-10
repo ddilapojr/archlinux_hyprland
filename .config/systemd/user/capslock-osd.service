@@ -4,7 +4,7 @@ Description=Caps Lock OSD Notification Service
 
 [Service]
 Type=simple
-ExecStart=%h/.local/bin/caps-lock-osd.sh
+ExecStart=%h/.local/bin/capslock-osd.sh
 Restart=on-failure
 RestartSec=3
 

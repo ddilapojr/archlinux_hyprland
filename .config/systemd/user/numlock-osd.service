@@ -4,7 +4,7 @@ Description=Num Lock OSD Notification Service
 
 [Service]
 Type=simple
-ExecStart=%h/.local/bin/num-lock-osd.sh
+ExecStart=%h/.local/bin/numlock-osd.sh
 Restart=on-failure
 RestartSec=3
 
