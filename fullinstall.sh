@@ -57,7 +57,7 @@ if [[ -n "$user_location" ]]; then
     sed -i "s|--location [^ ]*|--location $user_location|" ~/.config/waybar/config.jsonc
 fi
 
-systemctl --user enable --now hyprpolkitagent waybar swaync hypridle
+systemctl --user enable --now hyprpolkitagent waybar mako hypridle
 systemctl --user enable --now volume-osd brightness-osd capslock-osd numlock-osd
 
 pkill hyprpolkitagent
