@@ -58,7 +58,7 @@ if [[ -n "$user_location" ]]; then
 fi
 
 systemctl --user enable --now hyprpolkitagent waybar swaync hypridle
-systemctl --user enable --now volume-osd brightness-osd caps-lock-osd num-lock-osd
+systemctl --user enable --now volume-osd brightness-osd capslock-osd numlock-osd
 
 pkill hyprpolkitagent
 pkill swww-daemon
